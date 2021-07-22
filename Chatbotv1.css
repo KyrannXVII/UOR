@@ -1,0 +1,214 @@
+body
+{
+    background-color:rgba(54, 52, 52, 0.699) ; /*  rgba(122, 115, 115, 0.623) */
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+a{ /*annule le surlignage des liens */
+    text-decoration:none;
+    color:rgb(160, 4, 4);
+}
+
+.menu-navi{ /* couleur de la barre de navigation*/
+    background-color: rgb(32, 32, 32);
+}
+.bouton{ /* permet l'espacement des boutons de la barre de navigation*/
+    padding: 10px 20px;
+}
+.a-menu{ /*couleur de base de l'écriture dans les boutons*/
+    color: rgba(255, 38, 0, 0.63);
+}
+/*modif 14/01/2020 pour integration sous menu*/
+.bouton:hover, .a-sousMenu:hover{ /*quand la souris passe sur le bouton,son fond change de couleur de meme pour le sous menu et change aussi la couleur de text du sous menu*/
+    background-color: rgb(26, 11, 11) ;
+    color: rgb(81, 102, 133);
+}
+
+.bouton:hover .a-menu{ /*quand la souris passe sur le bouton, le lien, donc "l'écriture" change de couleur*/
+    color: rgb(81, 102, 133);
+}
+
+
+.div1{
+    width: 45%;
+    float: left;
+
+}
+.div2{
+    width: 45%;
+    float: right;
+
+}
+.img1{
+    width: 384px;
+    height: 272px;
+    margin: 0px 20px 50px;
+    float: left;
+}
+
+.stopf{
+    clear: both;
+    
+}
+/*Formulaire Inscri/Connexion*/
+.form{
+    font-size:120% ;
+   
+}
+input[type=submit]{
+    border:hidden;                                /*cache le contour du bouton*/
+    padding-top: 0.5%;                            /*padding en haut et en bas*/
+    padding-bottom:0.5%;
+    color:rgba(207, 35, 5, 0.767) ;                                  /*couleur de l'ecriture*/
+    background-color:rgba(54, 52, 52, 0.900);   /*couleur du fond*/
+    border-radius: 30px;                          /*arrondi les bords*/
+    font-size: 17px;                              /*taille du bouton :17px*/
+   
+}
+input[type=submit]:hover,.bla:hover{                         /*quand on passe sa souris dessus = ombre */
+    box-shadow: rgba(255, 38, 0, 0.1) 2px 2px 20px 20px;
+    color:red;                                  /*couleur de l'ecriture*/
+}
+
+.Inscription{                                     /*inscription a gauche */
+    width: 35%;
+    float: left;
+    margin-left:8%
+}
+.Connexion{                                       /*connexion a droite */
+    width: 35%;
+    float: right;
+    margin-right:8%;
+    
+}
+input[type=text],input[type=email],input[type=password]{        /* pour toute les infos a remplir*/
+    background-color:rgba(54, 52, 52, 0.001);                 /* meme couleur que le fond, intensité bien inférieur sinon ce vois trop..*/
+    border:none;                                                /*enleve toute les bordures*/
+    border-bottom : 2px solid rgba(255, 50, 0, 0.5);          /*rajoute une bordure rouge en bas*/
+    font-size:17px ;                                            
+    color : rgb(160, 4, 4);                                              /*ecriture en rouge*/
+    width: 70%
+    
+}
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
+    background-color:rgba(54, 52, 52, 1);                     /*quand on ecris dedans : couleur fond passe + foncé*/
+    border:none;                                                /*garde le fait qu'il n'y ai que la bordure du bas en rouge*/
+    border-bottom : 2px solid rgba(255, 50, 0, 0.5);
+    color: rgba(255, 50, 0, 0.5);
+}
+
+/*Formulaire Utilisateur*/
+.divNL{                                     /*inscription a gauche */
+    width: 45%;
+    float: left;
+}
+
+.divMdp{                                    /*connexion a droite */
+    width: 40%;
+    float: right;
+
+}
+.divMail{
+    width: 100%;
+    float: right;
+}
+.msgForm{                                   /* Message d'erreur ou de validation des informations des formulaire*/
+    color: red;
+    margin-top:42%;
+    clear: both;                            
+    font-size : 150%;
+}
+
+/* BOT  */
+
+
+.test{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+}
+/*
+.a-chatbot{
+    background-color:gray;
+    border-radius: 30px;
+    font-size: 50px;   
+}
+*/
+
+.contourfenetrebot{ /*permet de mettre aussi la barre d'ecriture etc dans la barre du bot*/
+    width:300px;
+    height:500px;
+    border: 5px solid #333;
+    padding: 8px 12px;
+    background-color: black;
+    border-radius: 30px;
+    display: none;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+
+}
+.fenetrechatbot{
+    width:280px;
+    height:450px;
+    margin:auto; /* centre la fenetre de discution dans la fenetre du bot*/
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+ 
+    border-radius: 30px;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+.blabla{
+    position:absolute;
+    bottom:13px;
+    right:75px;
+   
+}
+.bla{
+    position:absolute;
+    bottom:13px;
+    right:15px;
+  
+    border:hidden;                                /*cache le contour du bouton*/
+    padding-top: 0.5%;                            /*padding en haut et en bas*/
+    padding-bottom:0.5%;
+    color:rgba(207, 35, 5, 0.767) ;                                  /*couleur de l'ecriture*/
+    background-color:rgba(54, 52, 52, 0.900);   /*couleur du fond*/
+    border-radius: 5px;                          /*arrondi les bords*/
+    font-size: 17px;                              /*taille du bouton :17px*/
+}
+
+
+
+.DemUser, .Repbot{
+ /*   margin-bottom: px;*/  
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 25%;
+}
+
+.BulleBot{
+        width: 210px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 45% 80%, 20% 90%, 20% 80%, 0% 80%);
+        background-color: rgba(170, 54, 54, 0.664);
+        float: left;
+        margin-right: 50px;
+        margin-left: 10px;
+        border-radius: 7px;
+ 
+}
+
+.BullU{
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left:30%;
+        border-radius: 7px;
+        background-color:rgba(134, 115, 115, 0.733);
+        text-align: center;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 75% 80%, 75% 90%, 50% 80%, 0% 80%);
+        float: right;
+    }
+
+    ::-webkit-scrollbar{
+        width: 10px;
+      background-color:transparent;    } /* Camouffle la scrollbar */
