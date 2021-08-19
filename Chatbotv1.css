@@ -120,10 +120,33 @@ input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
     font-size : 150%;
 }
 
+/* Menu Déroulant JS  */
+.test {
+    display: none;    /* Cache les sous menus - ca changera celon le .js*/
+    position: absolute;
+    background-color: rgb(32, 32, 32);
+    min-width: 200px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.test a{
+    color:rgb(160, 4, 4);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.show {display: block;}
+
+
+
+
 /* BOT  */
 
 
-.test{
+.testb{
     position:absolute;
     right:10px;
     bottom:10px;
